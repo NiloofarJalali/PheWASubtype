@@ -108,7 +108,7 @@ Reg=function(x,input,output,threshold){
   return(row)}
 
 
-Phecode=read.csv("~/phecode_icd9_map_unrolled 2.csv")
+Phecode=read.csv("~/phecode_icd9_rolled.csv")
 load("~/pheinfo.rda")
 # pheinfo[1815,]=c('563',"Constipation","10","digestive","chartreuse4")
 # pheinfo[1816,]=c('561.1',"Diarrhea","10","digestive","chartreuse4")
