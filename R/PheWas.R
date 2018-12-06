@@ -108,13 +108,13 @@ Reg=function(x,input,output,threshold){
   return(row)}
 
 
-Phecode=read.csv("/Users/niloofar/Downloads/phecode_icd9_map_unrolled 2.csv")
-load("/Users/niloofar/Downloads/pheinfo (1).rda")
-pheinfo[1815,]=c('563',"Constipation","10","digestive","chartreuse4")
-pheinfo[1816,]=c('561.1',"Diarrhea","10","digestive","chartreuse4")
-pheinfo[1817,]=c('279.2',"Immune disorders","3","endocrine/metabolic","brown")
-pheinfo[1818,]=c('300.3',"Obssesive compulsive disorder","5","mental disorders","magenta")
-pheinfo[1819,]=c('783',"symptoms concerning nutrition,mtblsm and Dvlpmnt","17","symptoms","purple")
+Phecode=read.csv("~/phecode_icd9_map_unrolled 2.csv")
+load("~/pheinfo.rda")
+# pheinfo[1815,]=c('563',"Constipation","10","digestive","chartreuse4")
+# pheinfo[1816,]=c('561.1',"Diarrhea","10","digestive","chartreuse4")
+# pheinfo[1817,]=c('279.2',"Immune disorders","3","endocrine/metabolic","brown")
+# pheinfo[1818,]=c('300.3',"Obssesive compulsive disorder","5","mental disorders","magenta")
+# pheinfo[1819,]=c('783',"symptoms concerning nutrition,mtblsm and Dvlpmnt","17","symptoms","purple")
 # save(pheinfo,file="pheinfo (1).rda")
 
 pheinfo$groupnum=as.numeric(pheinfo$groupnum)
